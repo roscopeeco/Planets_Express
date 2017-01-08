@@ -1,0 +1,102 @@
+
+.jumbotron
+{
+	padding:2rem;
+	border-radius:0;
+	border: 1px solid rgba(0, 0, 0, 0.125);
+	background-color:#000000;
+	text-align:center;
+	color:#fff;
+}
+
+.jumbotron img
+{
+	width:100%;
+}
+
+h1
+{
+	text-align:center;
+}
+
+h2.temperature
+{
+	display: inline-block;
+	font-size: 3em;
+	line-height: 5rem;
+	margin-bottom: 0;
+	vertical-align: top;
+}
+
+.card-title
+{
+	margin-bottom:0;
+	display:inline-block;
+	float:left;
+}
+
+.fa
+{
+	float:right;
+}
+
+.card.card-block
+{
+	height: 20rem;
+}
+
+.card-block-title
+{
+	background-color:#fff;
+	transition: background-color 1s ease-in-out;
+	-webkit-transition: background-color 1s ease-in-out;
+
+}
+
+.card-block-title:focus,
+.card-block-title:hover
+{
+	background-color:#f6f6f6;
+	cursor:pointer;
+    transition: background-color 1s ease-in-out;
+	-webkit-transition: background-color 1s ease-in-out;
+}
+
+.card-block-title:after
+{
+	clear:both;
+}
+
+
+.loading
+{
+	text-align:center;
+}
+
+.loading img
+{
+	height:3rem;
+}
+
+.loading h3
+{
+	margin-bottom:2rem;
+}
+
+table th
+{
+	padding-left:0;
+}
+
+table td
+{
+	text-align:center;
+	padding-right:0;
+}
+
+.img-responsive
+{
+	max-width:100%;
+	display:block;
+	height:auto;
+}

@@ -1,0 +1,43 @@
+<div class="loading" data-bind="visible:loading">
+	<img src="images/hourglass.gif" alt="Loading image" />
+	<h3>loading the planets information</h3>
+</div>
+<!-- ko if:loaded -->
+<div data-bind="foreach:items">
+	<div class="card" data-bind="attr:{id:name.toLowerCase()}, css:open">
+	  <div class="card-block card-block-title" data-bind="click:$parent.toggle">
+		  	<h3 class="card-title" data-bind="text:name"></h3>
+			<i class="fa fa-chevron-up" aria-hidden="true"  data-bind="visible:show"></i>
+			<i class="fa fa-chevron-down" aria-hidden="true"  data-bind="visible:!show()"></i>
+	  </div>
+	  <div class="card-block card-block-body" data-bind="visible:show">
+		  <div class="row">
+			<div class="col col-md-6">
+				<img class="img-responsive" data-bind="attr:{src:'images/'+image}"/>
+			</div>
+			<div class="col col-md-6" >
+			  <table class="table" width="100%">
+  					<tbody>
+  						<tr>
+  							<th width="50%">Distance</th>
+  							<td width="50%" data-bind="text:distancetext"></td>
+  						</tr>
+  						<tr>
+  							<th width="50%" >Mass</th>
+  							<td width="50%"  data-bind="text:masstext"></td>
+  						</tr>
+  						<tr>
+  							<th width="50%">Diameter</th>
+  							<td width="50%" data-bind="text:diametertext"></td>
+  						</tr>
+  					</tbody>
+  				</table>
+			</div>
+			<div class="col col-md-6">
+				<p data-bind="text:description"></p>
+			</div>
+		</div>
+	  </div>
+	</div>
+</div>
+<!-- /ko -->
